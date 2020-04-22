@@ -21,7 +21,7 @@ public class fileHandler extends AppCompatActivity {
 
         try {
             fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
-            fos.write(value.getBytes());
+      //      fos.write(value.getBytes());
 
 
             Toast.makeText(this, "Saved to " + getFilesDir() + "/" + FILE_NAME,

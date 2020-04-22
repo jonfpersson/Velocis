@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button pushup;
+    private Button plank;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,16 +17,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pushup = (Button) findViewById(R.id.pushup);
-        pushup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity2();
-            }
-        });
+
     }
 
-    public void openActivity2() {
+    public void enterPushupPage(View v) {
         Intent intent = new Intent(this, Activity2.class);
         startActivity(intent);
     }
+
 }
